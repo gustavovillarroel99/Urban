@@ -10,6 +10,6 @@ document.addEventListener("DOMContentLoaded", function () {
             event.preventDefault(); // Impede de ir para inicio.html
             alert("Preencha o email e a senha!");
         }
-        // Se estiver preenchido, o navegador segue o link href="inicio.html" normalmente
+       
     });
 });

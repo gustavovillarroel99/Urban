@@ -1,6 +1,4 @@
-/* ======================================
-   RESET & ESTILOS GERAIS
-====================================== */
+
 
 * {
     margin: 0;
@@ -13,10 +11,6 @@ body {
     font-family: Arial, sans-serif;
     background-color: #ffffff;
 }
-
-/* ======================================
-   HERO / BANNER SUPERIOR
-====================================== */
 
 .hero-section {
     background-color: #ffffff;
@@ -99,9 +93,7 @@ body {
     display: block;
 }
 
-/* ======================================
-   FAIXA AMARELA PRINCIPAL
-====================================== */
+
 
 .main-yellow-section {
     background-color: #FAAD3A;
@@ -120,9 +112,6 @@ body {
     line-height: 1.3;
 }
 
-/* ======================================
-   SEÇÃO CARDS (NOSSO OBJETIVO)
-====================================== */
 
 .cards-container {
     max-width: 1100px;
@@ -181,9 +170,7 @@ body {
     line-height: 1.4;
 }
 
-/* ======================================
-   SEÇÃO GALERIA (BOLINHAS SEM PRETO E SEM TRANSPARÊNCIA)
-====================================== */
+
 
 .gallery-container {
     max-width: 1100px;
@@ -229,9 +216,6 @@ body {
     display: block;
 }
 
-/* ======================================
-   RODAPÉ / FOOTER
-====================================== */
 
 .footer-section {
     width: 100%;
@@ -285,9 +269,7 @@ body {
     object-fit: contain;
 }
 
-/* ======================================
-   RESPONSIVIDADE
-====================================== */
+
 
 @media (max-width: 900px) {
     .cards-grid {

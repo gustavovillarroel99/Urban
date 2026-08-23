@@ -1,4 +1,3 @@
-/* RESET BÁSICO */
 * {
     margin: 0;
     padding: 0;
@@ -11,13 +10,12 @@ body {
     background-color: #FAAD3A;
 }
 
-/* NAVBAR */
-.navbar-container {
+.cabecalho {
     width: 100%;
     background-color: #ffffff;
 }
 
-.navbar {
+.menu-navegacao {
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px 40px;
@@ -26,81 +24,58 @@ body {
     justify-content: space-between;
 }
 
-.nav-logo {
+.imagem-logo {
     width: 110px;
     height: auto;
 }
 
-.nav-links {
+.links-menu {
     display: flex;
     gap: 25px;
 }
 
-.nav-links a {
+.links-menu a {
     color: #FAAD3A;
     text-decoration: none;
     font-size: 15px;
     font-weight: bold;
 }
 
-.nav-links a.active {
+.links-menu a.ativo {
     color: #D9822B;
 }
 
-/* SEÇÃO TOPO BRANCO COM TEXTO */
-.hero-top {
-    background-color: #ffffff;
-    padding: 40px 20px 10px 20px;
+.secao-carrossel {
+    background-color: #FAAD3A;
+    padding: 40px 20px 80px 20px;
 }
 
-.hero-header {
+.cabecalho-principal {
     max-width: 1100px;
-    margin: 0 auto;
+    margin: 0 auto 30px auto;
 }
 
-.hero-header h1 {
+.cabecalho-principal h1 {
     font-size: 38px;
-    color: #D9822B;
+    color: #ffffff;
     font-weight: 800;
     margin-bottom: 12px;
 }
 
-.hero-header p {
+.cabecalho-principal p {
     font-size: 15px;
     color: #ffffff;
     max-width: 550px;
     line-height: 1.4;
 }
 
-/* ONDA DE TRANSIÇÃO (SVG) */
-.wave-divider {
-    width: 100%;
-    background-color: #ffffff;
-    overflow: hidden;
-    line-height: 0;
-}
-
-.wave-divider svg {
-    position: relative;
-    display: block;
-    width: 100%;
-    height: 70px;
-}
-
-/* ÁREA AMARELA COM A ROLETA */
-.carousel-section {
-    background-color: #FAAD3A;
-    padding: 10px 20px 80px 20px;
-}
-
-.carousel-wrapper {
+.container-carrossel {
     position: relative;
     max-width: 1100px;
     margin: 0 auto;
 }
 
-/* TRILHO DE CARDS DE ROLAGEM */
-.carousel-track {
+.trilho-carrossel {
     display: flex;
     gap: 20px;
     overflow-x: auto;
@@ -110,16 +85,15 @@ body {
     scrollbar-width: none;
 }
 
-.carousel-track::-webkit-scrollbar {
+.trilho-carrossel::-webkit-scrollbar {
     display: none;
 }
 
-.carousel-track:active {
+.trilho-carrossel:active {
     cursor: grabbing;
 }
 
-/* CARD INDIVIDUAL */
-.card-item {
+.cartao-item {
     flex: 0 0 220px;
     background-color: #ffffff;
     border-radius: 20px;
@@ -128,16 +102,17 @@ body {
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
     user-select: none;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-decoration: none;
+    color: inherit;
+    display: block;
 }
 
-/* EFEITO DE CRESCER AO PASSAR O MOUSE */
-.card-item:hover {
+.cartao-item:hover {
     transform: translateY(-10px) scale(1.08);
     box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
 }
 
-/* CONTAINER DA IMAGEM DO CARD */
-.card-image-box {
+.caixa-imagem {
     width: 100%;
     height: 140px;
     border-radius: 14px;
@@ -145,7 +120,7 @@ body {
     background-color: #f0f0f0;
 }
 
-.card-image-box img {
+.caixa-imagem img {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -153,7 +128,7 @@ body {
     pointer-events: none;
 }
 
-.card-item h3 {
+.cartao-item h3 {
     font-size: 13px;
     color: #222222;
     margin-top: 14px;
@@ -162,8 +137,7 @@ body {
     line-height: 1.3;
 }
 
-/* SETAS LATERAIS */
-.carousel-btn {
+.botao-carrossel {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -183,20 +157,19 @@ body {
     transition: background-color 0.2s, transform 0.2s;
 }
 
-.carousel-btn:hover {
+.botao-carrossel:hover {
     background-color: #D9822B;
     transform: translateY(-50%) scale(1.1);
 }
 
-.btn-prev { left: -20px; }
-.btn-next { right: -20px; }
+.botao-carrossel.anterior { left: -20px; }
+.botao-carrossel.proximo { right: -20px; }
 
-/* RESPONSIVIDADE */
 @media (max-width: 768px) {
-    .hero-header h1 {
+    .cabecalho-principal h1 {
         font-size: 28px;
     }
     
-    .btn-prev { left: 0; }
-    .btn-next { right: 0; }
+    .botao-carrossel.anterior { left: 0; }
+    .botao-carrossel.proximo { right: 0; }
 }
