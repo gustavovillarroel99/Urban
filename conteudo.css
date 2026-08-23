@@ -236,7 +236,7 @@ body {
 .footer-section {
     width: 100%;
     background-color: #ffffff;
-    padding: 60px 20px;
+    padding: 50px 20px;
     border-top: 1px solid #f0f0f0;
 }
 
@@ -246,15 +246,18 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    gap: 20px;
 }
 
+/* Logo à esquerda */
 .footer-logo img {
-    max-width: 380px;
+    max-width: 240px;
     width: 100%;
     height: auto;
     display: block;
 }
 
+/* Links ao centro */
 .footer-nav {
     display: flex;
     flex-direction: column;
@@ -263,27 +266,23 @@ body {
 
 .footer-nav a {
     color: #FAAD3A;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 700;
     text-decoration: none;
-    transition: opacity 0.2s;
+    transition: opacity 0.2s, color 0.2s;
 }
 
 .footer-nav a:hover {
-    opacity: 0.8;
+    color: #D9822B;
+    opacity: 0.9;
 }
 
-/* Responsividade do Rodapé */
-@media (max-width: 768px) {
-    .footer-container {
-        flex-direction: column;
-        gap: 30px;
-        text-align: center;
-    }
-
-    .footer-nav {
-        align-items: center;
-    }
+/* QR Code à direita */
+.footer-qr img {
+    width: 130px;
+    height: auto;
+    display: block;
+    object-fit: contain;
 }
 
 /* ======================================
@@ -297,6 +296,18 @@ body {
 
     .circles-grid {
         justify-content: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        gap: 30px;
+        text-align: center;
+    }
+
+    .footer-nav {
+        align-items: center;
     }
 }
 
